@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <link rel="stylesheet" type="text/css" href="main.css">	
+</head>
+
+<body>
+	<div class="outerbody">	
+		<div class="row">
+			<div class="container" id="headchange">
+				<div class="topnav" id="myTopnav" >
+					<a class="active">Kvothebooks</a>	
+					<a href="">News</a>
+					<a href="">Books</a>
+					<a href="">Event</a>
+					<a href="">About</a>
+					<a href="javascript:void(0);" id="myTopnav" class="icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="container" >
+			<div class="col-md-12" style="height: 140px"></div>
+		</div>
+		<div class="container" >
+			<div class="hero-box col-md-5">
+					<h1>You haben't read anything yet.</h1>
+					<p>They say outside of a dog, a book is man's best friend (inside of a dog it's too dark to read). Come in, chat with us, share your favorit books & film and we'llinduce you to some of the greatest friends you'll ever know.</p>
+					<div style="display: flex; opacity:initial; justify-content: center;"><button class="button">Come visit us!</button></div>
+			</div>
+		</div>
+	</div>
+	<div class="container" style="padding-top: 20px;">
+		<div style="padding: 20px 20px; background-color: grey">
+			<div class="input-group mx-auto col-lg-6 col-md-8 col-sm-12">
+		  		<input id="search-box" class="form-control" type="text" placeholder="Find book here" name="search2">
+		 		<button id="search" class="btn btn-success">Search</button>
+			</div>
+		</div>
+	</div>		
+	<div class="container">
+		<div class="book-list" style="color:black;">
+			<div id="list-output" class="list-output">
+				<div class="row">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<footer class="cont">
+  <div class="container"> Created by Virat bhatt</div>
+</footer>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<script>
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+    document.getElementById("headchange").style.opacity = "1 !important";
+  } 
+  else {
+    document.getElementById("headchange").style.opacity = "0.7 !important";
+  }
+}
+</script>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.6.2.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
+
